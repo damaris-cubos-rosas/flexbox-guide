@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    margin: 2rem;
+    width: 100vw;
+    height: 100vh;
+}
+
+h2 {
+    font-size: 28px;
+    color: navy;
+    margin-top: 5rem;
+}
+
+.container {
+    display: flex;
+    width: 95vw;
+    margin: 1.5rem 0;
+}
+
+/* Row square color */
+.container .square {
+    width: 80px;
+    height: 80px;
+    border: 2px solid darkblue;
+    background-color: lightblue;
+    color: darkblue;
+    font-size: 32px;
+    text-align: center;
+}
+
+/* Row-reverse square color */
+.container.row-reverse .square{
+    background-color: greenyellow;
+}
+
+/* Column square color */
+.container.column .square{
+    background-color: lightpink;
+}
+
+/* Column-reverse square color */
+.container.column-reverse .square{
+    background-color: yellow;
+}
+
+/* Clases de utilidad */
+.row {
+    flex-direction: row;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.column-reverse {
+    flex-direction: column-reverse;
+}
+
+.flex-start {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.flex-end {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+
